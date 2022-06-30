@@ -1,15 +1,16 @@
-x=int(input())
-k=0
-if x>0:
-    while x:
-      d=x%10
-      x=x//10
-      k=k*10+d
-    print(k)
+n=int(input())
+rev=0
+s=0
+if n>0:
+    while n:
+        d=n%10
+        rev=rev*10+d
+        n=n//10
+    print(rev)
 else:
-    s=abs(x)
+    s=abs(n)
     while s:
         d=s%10
-        s=s//10
-        k=k*10+d
-    print(-k)
+        rev=rev*10+d
+        s//=10
+    print(-rev)
