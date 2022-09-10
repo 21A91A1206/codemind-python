@@ -1,7 +1,9 @@
 n=int(input())
 a=list(map(int,input().split()))
-s=sum(a)
-avg=s//n
+b=0
+for i in a:
+    b=(b+i)
+avg=b//n
 if avg in a:
     print("True")
 else:
