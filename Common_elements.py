@@ -1,11 +1,9 @@
 a,b=map(int,input().split())
 l=list(map(int,input().split()))
-m=list(map(int,input().split()))
-o=[]
+ll=list(map(int,input().split()))
+c=[]
 for i in l:
-    if i in m:
-        if i not in o:
-            o.append(i)
-print(*o)
-        
-
+    if i in ll:
+        if i not in c:
+            c.append(i)
+print(*c)
